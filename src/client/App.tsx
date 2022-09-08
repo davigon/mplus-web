@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom"
 import { Footer } from "./components/Footer"
 import { Navbar } from "./components/Navbar"
 import { HomePage } from "./pages/HomePage"
+import { EpgPage } from "./pages/EpgPage"
 import { NotFoundPage } from "./pages/NotFoundPage"
 import theme from "./theme"
 
@@ -16,6 +17,7 @@ export const App = () => {
         <main className="Main">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/epg" element={<EpgPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
